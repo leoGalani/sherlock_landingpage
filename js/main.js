@@ -60,7 +60,7 @@ jQuery(function($) {
 		if($(window).width() > 768)
 		{
 			$('header').height($(window).height());
-			$('.intro-book').css('top', ($('header').height() / 2 - $('.intro-book').height() / 2) + "px");
+			$('.intro-sherlock').css('top', ($('header').height() / 2 - $('.intro-sherlock').height() / 2) + "px");
 			$('.intro-text').css('top', ($('header').height() / 2 - $('.intro-text').height() / 2) + "px");
 		}
 		else {
@@ -69,7 +69,7 @@ jQuery(function($) {
 		if(!$('.navbar').hasClass("nav-fixed") && loaded)
 			fixed_point = $('.navbar').offset().top;
 	}
-	
+
 	$('.sample-button').click(function(event){
 		$('#sample-form').slideDown();
 		event.preventDefault();
@@ -83,7 +83,7 @@ jQuery(function($) {
 			url = $(that).attr('action'),
 			type = $(that).attr('method'),
 			dataX = {};
-			
+
 		$(that).find("[name]").each(function(){
 			dataX[$(this).attr("name")] = $(this).val();
 		});

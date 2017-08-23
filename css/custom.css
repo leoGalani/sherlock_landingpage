@@ -378,7 +378,12 @@ section.features {
 	box-shadow:0 3px 5px rgba(0,0,0,.05);
 	margin: 50px 5px;
   min-height: 314px;
-  width: 24%;
+}
+
+@media only screen and (min-width: 768px) {
+  .feature {
+    width: 24%;
+  }
 }
 
 .feature img.feature-pic {
@@ -725,7 +730,7 @@ button:focus {
 
 .mobile-nav > ul > li > a {
 	margin:10px 0;
-	font-size:16px;
+	font-size:43px;
 }
 
 .mobile-nav a {
